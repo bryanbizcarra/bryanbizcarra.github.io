@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'system-ui';
+    --color-principal: rgb(36, 36, 36);
+}
+
+/*************************Nav*******************/
+.nav{
+    width: 100%;
+    height: 25vh;
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav h1{
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+}
+.nav a{
+    margin: 70px;
+    text-decoration: none;
+    border-bottom: solid rgb(255, 255, 255);
+    color: white;
+}
+
+
+/**********************Subtitulos*****************/
+h2{
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+}
+
+/************************Sobre mi****************************/
+.contenedor-sobre-mi{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content:center;
+    align-items: center;
+}
+
+.contenedor-sobre-mi .contenedor-img{
+    width: 30%;
+}
+
+.contenedor-sobre-mi .contenedor-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.contenedor-sobre-mi .contenedor-texto{
+    width: 50%;
+}
+
+.contenedor-sobre-mi .contenedor-texto p{
+    text-align: justify;
+    line-height: 50px;
+}
+
+
+/**********************Contenedores-tarjetas y tarjetas**************/
+.contenedor-tarjetas{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: space-around;
+}
+
+.tarjetas{
+    width: 20%;
+    height: 40vh;
+    /* box-shadow: 2px -2px var(--color-principal); */
+}
+
+.tarjetas img{
+    width: 100%;
+    height: 150px;
+    /* border-bottom: solid var(--color-principal); */
+    object-fit: contain;
+}
+
+.tarjetas p{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.tarjetas a{
+    /* background-color: var(--color-principal); */
+    padding: 5px;
+    border: solid 1px rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/********************Footer*******************/
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a img{
+    width: 100%;
+    height: 5vh;
+}
+
+
+/*************Responsive*****************/
+@media screen and (max-width: 1000px){
+    .nav a{
+        margin: 10px;
+    }
+    .contenedor-sobre-mi{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .contenedor-sobre-mi .contenedor-img{
+        width: 100%;
+    }
+    .contenedor-sobre-mi .contenedor-texto{
+        width: 90%;
+    }
+    .contenedor-sobre-mi .contenedor-texto p{
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .contenedor-tarjetas{
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .tarjetas{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .tarjetas img{
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+    }
+    .tarjetas p{
+        text-align: center;
+        line-height: 40px;
+    }
+    .tarjetas a{
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
