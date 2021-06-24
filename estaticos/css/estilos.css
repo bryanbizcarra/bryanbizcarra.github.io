@@ -36,7 +36,7 @@ h2{
 
 /************************Sobre mi****************************/
 .contenedor-sobre-mi{
-    background-image: url('/estaticos/img/fondo.jpg');
+    background-image: url('../img/fondo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
