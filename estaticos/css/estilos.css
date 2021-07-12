@@ -146,6 +146,9 @@ footer a img{
     .contenedor-sobre-mi{
         height: auto;
     }
+    .contenedor-img{
+        width: 300px;
+    }
 
     .contenedor-texto{
         padding: 5%;
