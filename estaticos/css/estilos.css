@@ -19,6 +19,7 @@
 .nav h1{
     color: white;
     font-size: 40px;
+    text-shadow: 2px 2px rgb(255 94 0);
 }
 .nav a{
     margin-left:20px;
@@ -35,6 +36,7 @@
     font-size: 40px;
     padding-top: 5%;
     padding-bottom: 5%;
+    text-shadow: 2px 2px rgb(255, 94, 0);
 }
 /************************Sobre mi****************************/
 .contenedor-sobre-mi{
@@ -69,6 +71,7 @@
 }
 /**********************Contenedores-tarjetas y tarjetas**************/
 .contenedor-seccion{
+    background-color: lightgrey;
     width: 100%;
     height: auto;
     padding-bottom: 5%;
@@ -79,8 +82,13 @@
     flex-wrap: wrap;
 }
 .tarjeta{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
     width: 350px;
     padding-bottom: 5%;
+    box-shadow: 10px 10px 0px 0px rgb(61, 60, 60);
 }
 .tarjeta img{
     width: 100%;
